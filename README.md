@@ -1,6 +1,6 @@
 # PO_scraping_2026: ranking delle offerte luce e gas come il Portale Offerte
 
-Strumento di competitive intelligence ENGIE sul mercato libero domestico. Il progetto:
+Strumento di competitive intelligence sul mercato libero domestico. Il progetto:
 
 1. scarica ogni giorno gli **open data del Portale Offerte** ARERA (offerte XML e parametri di calcolo);
 2. ricostruisce uno **storico** giornaliero di tutte le offerte;

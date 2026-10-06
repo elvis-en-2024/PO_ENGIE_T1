@@ -1,0 +1,21 @@
+# Dati (raw XML, parquet, PDF, export): troppo pesanti e rigenerabili
+data/*
+!data/config/
+data/config/download_history.json
+
+# Ambiente e cache
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.tmp/
+
+# Output temporanei
+*.tmp.parquet
+network_data.json
+out*.txt
+
+# File generati per i tunnel
+cloudflared*
+*.log

@@ -1,0 +1,210 @@
+{
+    "metadata": {
+        "last_updated": "2026-08-25",
+        "validity_quarter": "Q3",
+        "validity_year": 2026,
+        "warning_days": 90
+    },
+    "ELE": {
+        "residente": {
+            "dist_fix": 31.28,
+            "oneri_fix": 0.0,
+            "trasp_pot": 23.52,
+            "oneri_pot": 0.0,
+            "trasp_vol": 0.0119,
+            "oneri_vol": 0.033153,
+            "accisa_0_1800": 0.0,
+            "accisa_1800+": 0.0227,
+            "cdispd": 0.024
+        },
+        "non_residente": {
+            "dist_fix": 20.28,
+            "oneri_fix": 26.13,
+            "trasp_pot": 23.52,
+            "oneri_pot": 0.0,
+            "trasp_vol": 0.0119,
+            "oneri_vol": 0.033153,
+            "accisa_0_1800": 0.0227,
+            "accisa_1800+": 0.0227,
+            "cdispd": 0.024
+        }
+    },
+    "GAS_FIX": {
+        "Nord Occidentale": 65.0,
+        "Nord Orientale": 65.0,
+        "Centrale": 65.0,
+        "Centro-Sud Orientale": 65.0,
+        "Centro-Sud Occidentale": 65.0,
+        "Meridionale": 65.0
+    },
+    "GAS_VOL": {
+        "Nord Occidentale": [
+            [
+                120,
+                0.15
+            ],
+            [
+                480,
+                0.22896
+            ],
+            [
+                1560,
+                0.2265375
+            ],
+            [
+                9999999,
+                0.2265375
+            ]
+        ],
+        "Nord Orientale": [
+            [
+                120,
+                0.15
+            ],
+            [
+                480,
+                0.22896
+            ],
+            [
+                1560,
+                0.2265375
+            ],
+            [
+                9999999,
+                0.2265375
+            ]
+        ],
+        "Centrale": [
+            [
+                120,
+                0.15
+            ],
+            [
+                480,
+                0.22896
+            ],
+            [
+                1560,
+                0.2265375
+            ],
+            [
+                9999999,
+                0.2265375
+            ]
+        ],
+        "Centro-Sud Orientale": [
+            [
+                120,
+                0.15
+            ],
+            [
+                480,
+                0.22896
+            ],
+            [
+                1560,
+                0.2265375
+            ],
+            [
+                9999999,
+                0.2265375
+            ]
+        ],
+        "Centro-Sud Occidentale": [
+            [
+                120,
+                0.15
+            ],
+            [
+                480,
+                0.22896
+            ],
+            [
+                1560,
+                0.2265375
+            ],
+            [
+                9999999,
+                0.2265375
+            ]
+        ],
+        "Meridionale": [
+            [
+                120,
+                0.15
+            ],
+            [
+                480,
+                0.22896
+            ],
+            [
+                1560,
+                0.2265375
+            ],
+            [
+                9999999,
+                0.2265375
+            ]
+        ]
+    },
+    "GAS_ACCISE": {
+        "Nord": [
+            [
+                120,
+                0.044
+            ],
+            [
+                480,
+                0.175
+            ],
+            [
+                1560,
+                0.17
+            ],
+            [
+                9999999,
+                0.186
+            ]
+        ],
+        "Sud": [
+            [
+                120,
+                0.038
+            ],
+            [
+                480,
+                0.135
+            ],
+            [
+                1560,
+                0.12
+            ],
+            [
+                9999999,
+                0.15
+            ]
+        ]
+    },
+    "GAS_ADDIZIONALE": {
+        "Lombardia": 0.019,
+        "Lazio": 0.022,
+        "Campania": 0.025,
+        "Piemonte": 0.022,
+        "Veneto": 0.023,
+        "Emilia-Romagna": 0.02,
+        "Toscana": 0.021,
+        "Sicilia": 0.018,
+        "Puglia": 0.02,
+        "DEFAULT": 0.022
+    },
+    "PARAMETRI": {
+        "pun_stima": 0.15704,
+        "psv_stima": 0.606612,
+        "dispbt": -10.7718,
+        "accisa_ee": 0.0227,
+        "accisa_ee_franchigia": 1800,
+        "iva_ee": 0.10,
+        "iva_gas_soglie": [[480, 0.10], [9999999, 0.22]],
+        "perdite_rete_ee": 0.10
+    }
+}

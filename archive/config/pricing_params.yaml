@@ -1,0 +1,17 @@
+# Parametri regolati e di mercato per il motore di Pricing (Spesa Annua Stimata)
+# Gestiti per periodo di validità per far fronte a modifiche normative (es. 01/04/2026)
+
+periodi:
+  - valid_from: "2026-01-01"
+    valid_to: "2026-03-31"
+    parametri_elettrici:
+      lambda_perdite: 0.10
+      dispacciamento_tutele_graduali: false
+      # TODO: Inserire qui tutte le componenti dagli allegati AU
+      
+  - valid_from: "2026-04-01"
+    valid_to: "2099-12-31"
+    parametri_elettrici:
+      lambda_perdite: 0.10
+      dispacciamento_tutele_graduali: true # Nuove regole
+      # TODO: Allineare alle "Regole per il calcolo della Spesa Annua Stimata v4.0"

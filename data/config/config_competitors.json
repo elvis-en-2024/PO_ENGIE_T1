@@ -1,0 +1,66 @@
+{
+  "A2A": [
+    "https://www.a2a.it/casa/offerte-luce-gas"
+  ],
+  "ACEA": [
+    "https://www.aceaenergia.it/offerte-per-casa#dual",
+    "https://www.aceaenergia.it/offerte-per-casa#gas",
+    "https://www.aceaenergia.it/offerte-per-casa#luce"
+  ],
+  "E.ON": [
+    "https://www.eon-energia.com/luce.html",
+    "https://www.eon-energia.com/gas.html",
+    "https://www.eon-energia.com/offerta-luce-gas-insieme.html"
+  ],
+  "EDISON": [
+    "https://www.edisonenergia.it/edison/casa/luce-e-gas",
+    "https://www.edisonenergia.it/edison/casa/luce",
+    "https://www.edisonenergia.it/edison/casa/gas"
+  ],
+  "ENEL": [
+    "https://www.enel.it/it-it/offerte-luce",
+    "https://www.enel.it/it-it/offerte-gas",
+    "https://www.enel.it/it-it/offerte-luce-gas"
+  ],
+  "FASTWEB": [
+    "https://www.fastweb.it/energia/"
+  ],
+  "HERA COMM": [
+    "https://heracomm.gruppohera.it/casa/offerte-luce-gas",
+    "https://heracomm.gruppohera.it/casa/offerte-luce-gas/no-web"
+  ],
+  "ILLUMIA": [
+    "https://www.illumia.it/casa/luce/",
+    "https://www.illumia.it/casa/gas/",
+    "https://www.illumia.it/casa/luce-gas/energia-lunghissima-luce-gas-bianca"
+  ],
+  "IREN": [
+    "https://www.irenlucegas.it/casa/offerte-luce",
+    "https://www.irenlucegas.it/casa/offerte-gas",
+    "https://www.irenlucegas.it/casa/pacchetti-offerte-luce-e-gas"
+  ],
+  "NeN": [
+    "https://nen.it/offerte-e-prezzi"
+  ],
+  "OCTOPUS": [
+    "https://octopusenergy.it/le-nostre-tariffe"
+  ],
+  "PLENITUDE": [
+    "https://eniplenitude.com/offerta/casa/gas-e-luce",
+    "https://eniplenitude.com/offerta/casa/gas-e-luce/offerte-energia-elettrica",
+    "https://eniplenitude.com/offerta/casa/gas-e-luce/offerte-gas"
+  ],
+  "POSTE ITALIANE": [
+    "https://postepay.poste.it/poste-energia-luce-gas"
+  ],
+  "SORGENIA": [
+    "https://www.sorgenia.it/offerte-luce-e-gas-casa",
+    "https://www.sorgenia.it/offerte-luce-casa",
+    "https://www.sorgenia.it/offerte-gas-casa"
+  ],
+  "WIND": [
+    "https://www.windtre.it/energia/offerte-luce-gas",
+    "https://www.windtre.it/energia/offerte-luce",
+    "https://www.windtre.it/energia/offerte-gas"
+  ]
+}

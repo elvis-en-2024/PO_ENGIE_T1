@@ -1,0 +1,44 @@
+root_offer_path: "/{http://www.acquirenteunico.it/schemas/SII_AU/OffertaRetail/01}ListaOfferteMercatoLibero/{http://www.acquirenteunico.it/schemas/SII_AU/OffertaRetail/01}offerta"
+
+namespaces:
+  ns: "http://www.acquirenteunico.it/schemas/SII_AU/OffertaRetail/01"
+
+offerta_base:
+  - target: "codice_offerta"
+    xpath: "ns:IdentificativiOfferta/ns:COD_OFFERTA"
+    type: "string"
+  - target: "piva_venditore"
+    xpath: "ns:IdentificativiOfferta/ns:PIVA_UTENTE"
+    type: "string"
+  - target: "nome_offerta"
+    xpath: "ns:DettaglioOfferta/ns:NOME_OFFERTA"
+    type: "string"
+  - target: "tipo_mercato"
+    xpath: "ns:DettaglioOfferta/ns:TIPO_MERCATO"
+    type: "string"
+
+collections:
+  componenti_impresa:
+    root_path: "ns:ComponenteImpresa"
+    fields:
+      - target: "nome"
+        xpath: "ns:NOME"
+        type: "string"
+      - target: "descrizione"
+        xpath: "ns:DESCRIZIONE"
+        type: "string"
+  intervalli_prezzo:
+    root_path: "ns:ComponenteImpresa/ns:IntervalloPrezzi"
+    fields:
+      - target: "prezzo"
+        xpath: "ns:PREZZO"
+        type: "float"
+      - target: "consumo_da"
+        xpath: "ns:CONSUMO_DA"
+        type: "float"
+      - target: "consumo_a"
+        xpath: "ns:CONSUMO_A"
+        type: "float"
+      - target: "unita_misura"
+        xpath: "ns:UNITA_MISURA"
+        type: "string"

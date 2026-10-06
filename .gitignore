@@ -28,3 +28,7 @@ data/processed/*
 !data/storage/
 data/storage/*
 !data/storage/storico/
+
+!data/raw/
+data/raw/*
+!data/raw/parametri/

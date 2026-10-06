@@ -147,6 +147,9 @@ def leggi_finestra(fino_a: date, giorni: int = 8, root: Path = STORICO_DIR,
 
     lista = ", ".join(f"'{f}'" for f in files)
     con = duckdb.connect()
+    con.execute("PRAGMA memory_limit='500MB'")
+    con.execute("PRAGMA threads=1")
+    con.execute("PRAGMA preserve_insertion_order=false")
     df = con.execute(f"""
         WITH raw AS (
             SELECT * FROM read_parquet([{lista}], union_by_name = true,

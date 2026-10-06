@@ -24,3 +24,7 @@ cloudflared*
 data/processed/*
 !data/processed/storico_2026_full.parquet
 !data/processed/*.json
+
+!data/storage/
+data/storage/*
+!data/storage/storico/

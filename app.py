@@ -15,7 +15,7 @@ from engine.sas_calculator_fast import FastSASCalculator, ISTAT_REGIONI
 from ui import portale as ui
 
 st.set_page_config(page_title="Portale Offerte · Simulatore", layout="wide", page_icon="⚡",
-                   initial_sidebar_state="collapsed")
+                   initial_sidebar_state="expanded")
 st.markdown(ui.CSS, unsafe_allow_html=True)
 
 PIVA_NOMI = {

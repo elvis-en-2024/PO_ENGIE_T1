@@ -347,24 +347,27 @@ def schede(res: pd.DataFrame, unita: str, chiave: str):
 
 
 def tabella(res: pd.DataFrame, unita: str, nome_file: str):
+    prezzi_cols = [c for c in res.columns if c.startswith('Prezzo ') or c.startswith('Spread ')]
     cols = ['Pos', 'Venditore', 'NOME_OFFERTA', 'COD_OFFERTA', 'Tipo', 'SAS', 'VENDITA', 'SCONTI',
-            'RETE', 'ONERI', 'IMPOSTE', 'IVA', 'SCONTI_NO_IVA', 'QUOTA_FISSA', 'PREZZO_UNITARIO',
-            'Sconti dichiarati', 'Note']
+            'RETE', 'ONERI', 'IMPOSTE', 'IVA', 'SCONTI_NO_IVA', 'QUOTA_FISSA'] + prezzi_cols + [
+            'PREZZO_UNITARIO', 'Sconti dichiarati', 'Note']
     t = res[[c for c in cols if c in res.columns]]
     money = st.column_config.NumberColumn
-    st.dataframe(
-        t, hide_index=True, use_container_width=True, height=620,
-        column_config={
-            'NOME_OFFERTA': 'Offerta', 'COD_OFFERTA': 'Codice',
-            'SAS': money('Spesa annua €', format="%.2f"), 'VENDITA': money('Vendita €', format="%.2f"),
-            'SCONTI': money('Sconti €', format="%.2f"), 'RETE': money('Rete €', format="%.2f"),
-            'ONERI': money('Oneri €', format="%.2f"), 'IMPOSTE': money('Imposte €', format="%.2f"),
-            'IVA': money('IVA €', format="%.2f"), 'SCONTI_NO_IVA': money('Sconti no IVA €', format="%.2f"),
-            'QUOTA_FISSA': money('Quota fissa €/anno', format="%.2f"),
-            'PREZZO_UNITARIO': money(f'Prezzo medio €/{unita}', format="%.4f"),
-            'Sconti dichiarati': st.column_config.TextColumn('Sconti dichiarati', width="large"),
-            'Note': st.column_config.TextColumn('Note utili', width="large"),
-        })
+    cfg = {
+        'NOME_OFFERTA': 'Offerta', 'COD_OFFERTA': 'Codice',
+        'SAS': money('Spesa annua €', format="%.2f"), 'VENDITA': money('Vendita €', format="%.2f"),
+        'SCONTI': money('Sconti €', format="%.2f"), 'RETE': money('Rete €', format="%.2f"),
+        'ONERI': money('Oneri €', format="%.2f"), 'IMPOSTE': money('Imposte €', format="%.2f"),
+        'IVA': money('IVA €', format="%.2f"), 'SCONTI_NO_IVA': money('Sconti no IVA €', format="%.2f"),
+        'QUOTA_FISSA': money('Quota fissa €/anno', format="%.2f"),
+        'PREZZO_UNITARIO': money(f'Prezzo medio €/{unita}', format="%.4f"),
+        'Sconti dichiarati': st.column_config.TextColumn('Sconti dichiarati', width="large"),
+        'Note': st.column_config.TextColumn('Note utili', width="large"),
+    }
+    for c in prezzi_cols:
+        cfg[c] = money(c, format="%.5f")
+    
+    st.dataframe(t, hide_index=True, use_container_width=True, height=620, column_config=cfg)
     st.download_button("Scarica CSV", t.to_csv(index=False, sep=';', decimal=',').encode('utf-8-sig'),
                        file_name=nome_file, mime="text/csv")
 

@@ -19,3 +19,8 @@ out*.txt
 # File generati per i tunnel
 cloudflared*
 *.log
+
+!data/processed/
+data/processed/*
+!data/processed/storico_2026_full.parquet
+!data/processed/*.json

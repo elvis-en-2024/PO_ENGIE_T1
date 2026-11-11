@@ -68,7 +68,7 @@ def classify_unita(unita) -> str:
         return KIND_KW
     if "percent" in n or "%" in n:
         return KIND_PCT
-    if n.startswith("€") or "euro" in n or n == "€/anno":
+    if "euro" in n or "anno" in n:
         return KIND_FISSO
     return KIND_UNKNOWN
 
